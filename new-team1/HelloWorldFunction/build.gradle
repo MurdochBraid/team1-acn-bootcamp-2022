@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id "java"
 }
 
 repositories {
@@ -9,6 +9,10 @@ repositories {
 dependencies {
     implementation 'com.amazonaws:aws-lambda-java-core:1.2.1'
     implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
+   
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+    implementation 'com.amazonaws:aws-java-sdk-dynamodb:1.9.0'
+
     testImplementation 'junit:junit:4.13.2'
 }
 
